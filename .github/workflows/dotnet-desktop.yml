@@ -12,7 +12,7 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: windows-latest             
+    runs-on: windows-latest
 
     steps:
     - name: Checkout
@@ -29,6 +29,6 @@ jobs:
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
-      
+
     - name: Build
-      run: dotnet build ./Task.sln --configuration Release
+      run: dotnet build ./Task3.sln --configuration Release
