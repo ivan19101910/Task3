@@ -43,7 +43,7 @@ namespace Task3
 
         public string Get(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            string response = "Hello world";
+            string response = "Hello world5";
             return response;
         }
     }
